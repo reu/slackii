@@ -1,0 +1,12 @@
+{
+  "name": "slackii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Rodrigo Navarro <rnavarro@rnavarro.com.br>",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.60",
+    "slack-client": "^1.4.1"
+  }
+}
