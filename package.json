@@ -7,6 +7,6 @@
   "license": "MIT",
   "dependencies": {
     "blessed": "^0.1.60",
-    "slack-client": "^1.4.1"
+    "slack-client": "guiceolin/node-slack-client"
   }
 }
