@@ -25,7 +25,11 @@ function populateChannel(channel, callback) {
   fetchHistory(channel, function(messages) {
     messages.forEach(function(message) {
       if (message.type == "message") {
-        var user = slack.getUserByID(message.user);
+        if (message.subtype === "bot_message") {
+          var user = slack.getBotByID(message.bot_id)
+        }
+        else
+          var user = slack.getUserByID(message.user);
 
         ui.addMessage({
           user: user.name,
